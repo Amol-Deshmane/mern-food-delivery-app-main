@@ -1,0 +1,64 @@
+.add-dish-form {
+    width: 100%;
+    max-width: 700px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.add-dish-form h3 {
+    text-align: center;
+    color: #333;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.add-dish-form input,
+.add-dish-form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.add-dish-form input:focus,
+.add-dish-form select:focus {
+    border-color: #ff4d4d;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(255, 77, 77, 0.3);
+}
+
+.add-dish-form input[type="file"] {
+    padding: 10px;
+    border: none;
+    background: #f9f9f9;
+}
+
+.add-dish-form button {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out;
+}
+
+.add-dish-form button:hover {
+    background: #cc0000;
+}
+
+@media (max-width: 600px) {
+    .add-dish-form {
+        max-width: 100%;
+    }
+}

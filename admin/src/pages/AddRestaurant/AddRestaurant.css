@@ -1,0 +1,92 @@
+/* ✅ Main Container */
+.add-restaurant {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* ✅ Header */
+.add-restaurant h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* ✅ Form Styling */
+.add-restaurant form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* ✅ Labels */
+.add-restaurant label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #555;
+  text-align: left;
+}
+
+/* ✅ Input Fields */
+.add-restaurant input[type="text"],
+.add-restaurant input[type="file"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  background: #f9f9f9;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.add-restaurant input[type="text"]:focus,
+.add-restaurant input[type="file"]:focus {
+  border-color: #ff6600;
+  background: #fff;
+}
+
+/* ✅ File Input Styling */
+.add-restaurant input[type="file"] {
+  padding: 8px;
+  font-size: 14px;
+}
+
+/* ✅ Submit Button */
+.add-restaurant button {
+  background: linear-gradient(135deg, #ff6600, #ff3300);
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease-in-out;
+}
+
+.add-restaurant button:hover {
+  background: linear-gradient(135deg, #ff3300, #cc2900);
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 600px) {
+  .add-restaurant {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .add-restaurant input[type="text"],
+  .add-restaurant input[type="file"] {
+    font-size: 14px;
+  }
+
+  .add-restaurant button {
+    font-size: 16px;
+  }
+}

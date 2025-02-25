@@ -1,0 +1,23 @@
+.manage-inventory {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .inventory-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .inventory-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .inventory-item input {
+    width: 60px;
+    padding: 5px;
+  }
+  

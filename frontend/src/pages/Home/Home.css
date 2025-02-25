@@ -1,0 +1,162 @@
+/* Home.css - Modern Horizontal Restaurant Cards */
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+/* 🔥 Restaurants Section */
+.restaurant-list {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.restaurant-list h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* 🍽️ Horizontal Restaurant Cards */
+.restaurant-cards {
+    display: flex;
+    flex-wrap: nowrap;  /* Keeps the cards in a row */
+    overflow-x: auto;   /* Enables horizontal scrolling */
+    gap: 15px;
+    padding-bottom: 10px;
+    scrollbar-width: thin; 
+    scrollbar-color: #d1d1d1 transparent;
+}
+
+/* Custom Scrollbar */
+.restaurant-cards::-webkit-scrollbar {
+    height: 8px;
+}
+
+.restaurant-cards::-webkit-scrollbar-thumb {
+    background: #aaa;
+    border-radius: 10px;
+}
+
+.restaurant-card {
+    flex: 0 0 auto;
+    width: 320px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* 📸 Restaurant Image */
+.restaurant-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* 🏬 Restaurant Name */
+.restaurant-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #222;
+    margin: 10px 0;
+}
+
+/* 📍 Restaurant Location */
+.restaurant-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* 💻 Responsive Design */
+@media (max-width: 768px) {
+    .restaurant-cards {
+        overflow-x: scroll;
+        padding-left: 5px;
+    }
+
+    .restaurant-card {
+        width: 280px;
+    }
+}
+
+
+
+
+.restaurant-list {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 20px;
+    white-space: nowrap;
+  }
+  
+  .restaurant-card {
+    flex: 0 0 auto;
+    width: 250px;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .restaurant-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .restaurant-card img {
+    width: 100%;
+    height: 160px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .restaurant-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .restaurant-card p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .restaurant-list {
+      flex-wrap: nowrap;
+      gap: 10px;
+    }
+  
+    .restaurant-card {
+      width: 220px;
+    }
+  }
+  
+
+
+
+
+

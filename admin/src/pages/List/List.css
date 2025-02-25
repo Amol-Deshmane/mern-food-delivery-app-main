@@ -1,0 +1,113 @@
+/* ✅ Main Container */
+.list {
+    max-width: 1000px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f9f9f9;
+    min-height: 90vh;
+    padding: 20px;
+  }
+  
+  /* ✅ Heading */
+  .list p {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  /* ✅ Table Container */
+  .list-table {
+    max-width: 3000px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* ✅ Table Headers */
+  .list-table-format {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 1fr;
+    align-items: center;
+    padding: 12px 20px;
+    border-bottom: 1px solid #ddd;
+    font-weight: 500;
+    color: #444;
+    text-align: center;
+  }
+  
+  .list-table-format.title {
+    background: linear-gradient(135deg, #ff6600, #ff3300);
+    color: white;
+    font-size: 18px;
+  }
+  
+  /* ✅ Table Rows */
+  .list-table-format img {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  /* ✅ Stock Input */
+  .list-table-format input {
+    width: 60px;
+    padding: 8px;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .list-table-format input:focus {
+    border-color: #ff6600;
+    outline: none;
+  }
+  
+  /* ✅ Delete Button */
+  .cursor {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .cursor:hover {
+    color: darkred;
+    transform: scale(1.1);
+  }
+  
+  /* ✅ Responsive Design */
+  @media (max-width: 1000px) {
+    .list-table {
+      width: 100%;
+    }
+  
+    .list-table-format {
+      grid-template-columns: 1fr 2fr 1fr;
+      gap: 10px;
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .list-table-format img {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .list-table-format input {
+      width: 50px;
+      padding: 6px;
+    }
+  
+    .cursor {
+      font-size: 16px;
+    }
+  }
+  

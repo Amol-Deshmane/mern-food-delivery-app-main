@@ -1,0 +1,143 @@
+/* ✅ Main Container */
+.manage-dishes {
+  max-width: 550px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* ✅ Header */
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  
+}
+
+/* ✅ Dropdown Label */
+label {
+  font-size: 18px;
+  font-weight: 600;
+  color: #555;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* ✅ Dropdown */
+select {
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 6px;
+  border: 2px solid #ddd;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: border-color 0.3s ease-in-out;
+  
+}
+
+select:hover {
+  border-color: #ff6600;
+  
+}
+
+/* ✅ Dish List */
+.dish-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 5px;
+  justify-content: center;
+}
+
+/* ✅ Dish Card */
+.dish-item {
+  width: 230px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.dish-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ✅ Dish Image */
+.dish-item img {
+  width: 70%;
+  height: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* ✅ Dish Details */
+.dish-item p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #444;
+  font-weight: 500;
+}
+
+/* ✅ Delete Button */
+button {
+  background: #ff6600;
+  color: #fff;
+  padding: 10px 15px ;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #e65500;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .manage-dishes {
+    width: 95%;
+  }
+  .dish-list {
+flex-direction: row;
+    align-items: center;
+  }
+  .dish-item {
+    width: 50%;
+  }
+}
+
+/* ✅ Inventory Control */
+.inventory-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.inventory-control label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.inventory-control input {
+  width: 100px;
+  padding: 5px;
+  font-weight: bold;
+
+  font-size: 14px;
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
