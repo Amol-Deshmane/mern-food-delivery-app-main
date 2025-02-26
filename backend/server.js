@@ -7,6 +7,9 @@ import cartRouter from "./routes/cartRoute.js";
 import orderRouter from "./routes/orderRoute.js";
 import restaurantRouter from "./routes/restaurantRoute.js";  // ✅ Ensure Correct Import
 import dishRouter from "./routes/dishRoute.js"; // ✅ Ensure Correct Import
+import paymentRouter from "./routes/paymentRoute.js"; // ✅ Import payment route
+app.use("/api/payment", paymentRouter); // ✅ Add payment routes
+
 
 import dotenv from "dotenv";
 import bodyParser from "body-parser";
