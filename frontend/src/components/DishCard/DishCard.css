@@ -1,83 +1,106 @@
 .dish-card {
-    background: white;
-    border-radius: 12px;
-    padding: 15px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .dish-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .dish-card img {
-    width: 100%;
-    height: 180px;
-    border-radius: 10px;
-    object-fit: cover;
-  }
-  
-  .dish-card h3 {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    margin-top: 10px;
-  }
-  
-  .dish-card p {
-    font-size: 14px;
-    color: #555;
-    margin: 5px 0;
-  }
-  
-  .dish-card button {
-    background: #ff6600;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    font-size: 14px;
-    font-weight: bold;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background 0.3s ease-in-out;
-  }
-  
-  .dish-card button:hover {
-    background: #e65500;
-  }
-  
-  /* Mobile Responsive */
-  @media (max-width: 768px) {
-    .dish-card {
-      width: 90%;
-      margin: 0 auto;
-    }
-  }
-  
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
 
+.dish-card:hover {
+  transform: scale(1.05);
+}
 
-  
+.dish-card img {
+  width: 100%;
+  height: 180px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.dish-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+.dish-card p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* ✅ Add to Cart Button */
+.dish-card button {
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.dish-card button:hover {
+  background: #e65500;
+  transform: scale(1.05);
+}
+
+/* ✅ Counter UI */
+.food-item-counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: #f8f8f8;
+  padding: 8px 12px;
+  border-radius: 10px;
+  width: fit-content;
+  margin-top: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ Counter Icons */
+.food-item-counter img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* ✅ Add Button */
+.food-item-counter img:last-child {
+  filter: brightness(1.1);
+}
+
+.food-item-counter img:hover {
+  transform: scale(1.1);
+}
+
+/* ✅ Counter Number */
+.food-item-counter p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* ✅ Mobile Responsive */
+@media (max-width: 768px) {
+  .dish-card {
+      width: 100%;
+      margin: 10px 0;
+      padding: 12px;
+  }
+
   .food-item-counter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    background: #f8f8f8;
-    padding: 8px 12px;
-    border-radius: 8px;
-    width: fit-content;
-    margin: auto;
+      width: 100%;
+      justify-content: space-around;
   }
-  
-  .food-item-counter img {
-    width: 25px;
-    cursor: pointer;
-  }
-  
-  .food-item-counter p {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-  }
-  
+}
